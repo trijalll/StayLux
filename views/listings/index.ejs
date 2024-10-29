@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- <a href="/listings/new">
+            <button>Add more</button>
+        </a> -->
+    <div class="main">
+      <!-- -----------Navbar Start----------- -->
+
+      <div class="navbar"><%- include('../include/navbar.ejs')%></div>
+
+      <!-- -----------Navbar End----------- -->
+
+      <!-- ---------------Landing Page Start----------------- -->
+
+      <div class="landingPage">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"></div>
+            <div class="swiper-slide slide2"></div>
+            <div class="swiper-slide slide3"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+      </div>
+      <div class="text__landingPage">
+        <div class="text__head">
+          <p>
+            A better way <br />
+            to stay
+          </p>
+        </div>
+        <div class="text__para">
+          Inspiring, award-winning design <br />
+          meets modern, mobile-first service. <br />
+          Welcome to the future of hospitality.
+        </div>
+        <div class="text__search">
+          <div class="search__input">
+            <i class="ri-search-line"></i>
+            <p>Search a city</p>
+          </div>
+          <div class="search__button">
+            <p>Search</p>
+          </div>
+        </div>
+      </div>
+      <div class="gradiant__landingPage"></div>
+
+      <!-- ---------------Landing Page End----------------- -->
+
+      <!-- -----------Part 2 Start--------------- -->
+
+      <div class="part2">
+        <div class="part2__head">
+          <p class="part2__head__tittle">A world of choice</p>
+          <p class="part2__head__para">
+            From a room for a night to a loft for as long as you like, <br />
+            there's a Stay Cove for every occasion.
+          </p>
+        </div>
+        <div class="part2__cont">
+          <div class="card__left">
+            <%- include('../include/cards.ejs') %> 
+            <%- include('../include/cards.ejs') %>
+          </div>
+          <div class="card__center">
+            <div class="card__center__container">
+              <div class="card__center__image"></div>
+              <div class="card__center__location">
+                  <p>DUANE STREET | NYC</p>
+              </div>
+              <div class="card__center__tittle">
+                  <p>New York City</p>
+              </div>
+          </div>
+          </div>
+          <div class="card__right">
+            <%- include('../include/cards.ejs') %> 
+            <%- include('../include/cards.ejs') %>
+          </div>
+        </div>
+        <div class="part2__button">
+          <button>View all 25+ cities</button>
+        </div>
+      </div>
+
+      <!-------------Part 2 End----------------->
+       
+      <!-------------Part 3 Start----------------->
+
+      <div class="part3">
+        <div class="part3__text">
+          <p class="part3__text__head">
+            Hotel amenities <br> without hotel formality
+          </p>
+          <p class="part3__text__para">
+            From simple self check-in to boutique <br> bathroom amenities, we bring the best <br> of a hotel without any of the formality.
+          </p>
+          <div class="part3__button">
+            <button class="part3__button">Booking</button>
+          </div>
+        </div>
+        <div class="gradiant__videoPage"></div>
+        <video id="video" src="/video1.mp4" autoplay loop muted></video>
+      </div>
+
+      <!-------------Part 3 End----------------->
+
+      <!-------------Part 4 Start----------------->
+
+      <div class="part4">
+        <div class="part4__head">
+          <!-- <p>Stay at Hogg Palace</p> -->
+        </div>
+        <!-- Swiper -->
+
+  <!-- <div #swiperRef="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><%- include('../include/cards.ejs') %></div>
+      <div class="swiper-slide"><%- include('../include/cards.ejs') %></div>
+      <div class="swiper-slide"><%- include('../include/cards.ejs') %></div>
+      <div class="swiper-slide"><%- include('../include/cards.ejs') %></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  </div> -->
+
+  <!-- Swiper JS -->
+      </div>
+
+      <!-------------Part 4 End----------------->
+
+
+      <!-------------Footer Start----------------->
+
+        <%- include('../include/footer.ejs')%>
+      
+      <!-------------Footer End----------------->
+
+    </div>
+
+    <!-- -----------Script Start---------------- -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        // spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          loop: true,
+        },
+      });
+
+      // -----------slider part4 start---------------
+
+    //   var swiper = new Swiper(".mySwiper", {
+    //   slidesPerView: 3,
+    //   centeredSlides: true,
+    //   spaceBetween: 30,
+    //   loop: true,
+    //   pagination: {
+    //     el: ".swiper-pagination",
+    //     // type: "fraction",
+    //   },
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    // });
+    // -----------slider part4 end---------------
+
+    </script>
+
+    <!-- -------------Script End---------------- -->
+  </body>
+</html>

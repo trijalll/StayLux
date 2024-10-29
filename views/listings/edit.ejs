@@ -1,0 +1,46 @@
+<% layout('./include/boilerplate') -%>
+
+    <body>
+        <h1>Edit your Hotel Details:-</h1>
+        <form class="needs-validation" novalidate method="POST" action="/listings/<%= OneList._id %>?_method=PUT">
+            <div style="background-color: rgb(176, 174, 255); width: 43rem; margin: auto; padding: 2vw; border-radius: 10px;"
+                class="form-row mt-5">
+
+                <div class="col-md-100 mb-3">
+                    <label for="validationServer01">Enter Title</label>
+                    <input class="form-control" type="text" name="listing[Title]" value="<%= OneList.Title %>" required>
+                </div>
+
+                <div class="col-md-100 mb-3">
+                    <label for="validationServer01">Enter Title</label>
+                    <textarea required class="form-control" name="listing[Description]" cols="30"
+                        rows="8"><%= OneList.Description %></textarea>
+                </div>
+
+                <div class="col-md-100 mb-3">
+                    <label for="validationServer01">Enter Title</label>
+                    <input class="form-control" type="text" name="listing[Image]" value="<%= OneList.Image %>" required>
+                </div>
+
+                <div class="col-md-100 mb-3">
+                    <label for="validationServer01">Enter Title</label>
+                    <input class="form-control" type="number" name="listing[Price]" value="<%= OneList.Price %>"
+                        required>
+                </div>
+
+                <div class="col-md-100 mb-3">
+                    <label for="validationServer01">Enter Title</label>
+                    <input class="form-control" type="text" name="listing[Location]" value="<%= OneList.Location %>"
+                        required>
+                </div>
+
+                <div class="col-md-100 mb-3">
+                    <label for="validationServer01">Enter Title</label>
+                    <input class="form-control" type="text" name="listing[Country]" value="<%= OneList.Country %>"
+                        required>
+                </div>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </div>
+        </form>
+
+    </body>

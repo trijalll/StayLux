@@ -1,0 +1,20 @@
+
+<body>
+  <!-- <% layout('./include/boilerplate') -%> -->
+  <h1>More Details:</h1>
+
+  <ul>
+    <li><%= HotelId.Title %></li>
+    <li><%= HotelId.Description %></li>
+    <li>&#8377;<%= HotelId.Price.toLocaleString("en-IN") %></li>
+    <li><%= HotelId.Location %></li>
+    <li><%= HotelId.Country %></li>
+  </ul>
+  <a href="/listings/<%= HotelId._id %>/edit">
+    <button>Edit</button>
+  </a>
+  <br /><br />
+  <form action="/listings/<%= HotelId._id %>?_method=DELETE" method="POST">
+    <button type="submit">Delete</button>
+  </form>
+</body>

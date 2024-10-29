@@ -1,0 +1,44 @@
+<% layout('./include/boilerplate') -%>
+  <body>
+    <form class="needs-validation" novalidate method="POST" action="/listings/new">
+      <div style="background-color: rgb(176, 174, 255); width: 43rem; margin: auto; padding: 2vw; border-radius: 10px;" class="form-row mt-5" >
+        <h1 style="font-size: 25px;">Add Your Hotel:</h1>
+       
+
+        <div class="col-md-100 mb-3">
+        <label for="validationServer01">Enter Title</label>
+        <input class="form-control" type="text" placeholder="Enter Your Title" name="listing[Title] " required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+
+      <div class="col-md-100 mb-3">
+        <label for="exampleInputEmail1">Enter description</label>
+        <textarea name="listing[Description]" class="form-control" placeholder="Enter your descrition" cols="100" rows="3" required></textarea>
+      </div>
+
+      <div class="col-md-100 mb-3">
+        <label for="exampleInputEmail1">Enter Image url</label><br>
+        <input type="text" placeholder="Enter image URL/link" class="form-control" name="listing[Image]"> 
+      </div>
+
+      <div class="col-md-100 mb-3">
+        <label for="exampleInputEmail1">Enter Price</label><br>
+        <input type="text" placeholder="Enter Your Price" class="form-control" name="listing[Price]" required>
+      </div>
+
+      <div class="col-md-100mb-3">
+        <label for="exampleInputEmail1">Enter Location</label><br>
+        <input type="text" placeholder="Enter Your Location" class="form-control" name="listing[Location]" required>
+      </div>
+
+      <div class="col-md-100 mb-3">
+        <label for="exampleInputEmail1">Enter Country</label>
+        <input type="text" placeholder="Enter Your Country" class="form-control" name="listing[Country]" required>
+      </div>
+   
+      <button class="btn btn-primary" type="submit" >submit</button>
+    </form>
+  </div>
+  </body>

@@ -1,0 +1,41 @@
+.card{
+    height: 50vh;
+    width: 25vw;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    position: relative;
+}
+.card__price{
+    position: absolute;
+    background-color: var(--theme-color);
+    height: 7vh;
+    width: 5vw;
+    text-align: center;
+    color: white;
+    font-family: font1;
+    font-size: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0vw;
+    border-radius: 0vw 0vw 0vw 2vw;
+}
+.card__image{
+    width: 100%;
+    height: 70%;
+    background-image: url(https://images-v2.sonder.com/image/upload/c_fill,f_auto,q_auto:good,w_400/catalina/homepage/city_grid/London.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card__location{
+    font-size: 0.8vw;
+    font-family: font1;
+    color: var(--theme-color);
+}
+.card__tittle{
+    font-size: 1.7vw;
+    font-family: font2;
+    color: var(--theme-color);
+}

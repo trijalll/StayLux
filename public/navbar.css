@@ -1,0 +1,42 @@
+.navbar{
+    /* background-color: var(--text-grey-light); */
+    background-color: white;
+    height: 9vh;
+    width: 100%;
+    padding: 0vw 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0vw;
+    z-index: 10;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.01);
+}
+.navbar__left{
+    height: 100%;
+    width: 20%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.navbar__left h2{
+    font-family: font4;
+    color: var(--theme-color);
+    font-weight: 700;
+    cursor: pointer;
+}
+.navbar__right{
+    height: 100%;
+    width: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 1vw;
+}
+.navbar__right a{
+    font-family: font1;
+    color: black;
+    font-size: 1.09vw;
+}
